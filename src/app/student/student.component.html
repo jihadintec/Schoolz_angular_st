@@ -1,0 +1,33 @@
+<div class="uk-overflow-auto">
+    <table class="uk-table uk-table-small uk-table-divider">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First name</th>
+                <th>last name</th>
+                <th>dateOfBirth</th>
+                <th>gender</th>
+                <th>Address</th>
+                <th>email</th>
+                <th>mobile</th>
+                <th>National number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let Studentclass of studentclass">
+                <td>{{Studentclass.studentId}}</td>
+                <td>{{Studentclass.firstName}}</td>
+                <td>{{Studentclass.lastName}}</td>
+                <td>{{Studentclass.dateOfBirth}}</td>
+                <td>{{Studentclass.gender}}</td>
+                <td>{{Studentclass.address}}</td>
+                <td>{{Studentclass.email}}</td>
+                <td>{{Studentclass.mobileNumber}}</td>
+                <td>{{Studentclass.nationalNumber}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <button (click)="findAll()">clickme</button>
+    </div>
+</div>

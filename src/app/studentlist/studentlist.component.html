@@ -1,0 +1,59 @@
+<div class="card my-5">
+    <div class="card-body">
+        <form>
+            <h1>New Student</h1>
+            <table>
+                <tr>
+                    <tr>
+
+                        <tr>
+                            <td>First name</td>
+                            <td><input type="text" [(ngModel)]="studentclass.firstName" name="firstname" class="form-control"></td>
+                        </tr>
+
+                        <tr>
+                            <td>last name</td>
+                            <td><input type="text" [(ngModel)]="studentclass.lastName" name="lastname" [ngModelOptions]="{standalone: true}"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Date of Birth</td>
+                            <td><input type="date" [(ngModel)]="studentclass.dateOfBirth" name="dateofbirth" [ngModelOptions]="{standalone: true}"></td>
+                        </tr>
+                        <tr>
+                            <td>address</td>
+                            <td><input type="text" [(ngModel)]="studentclass.address" name="address" [ngModelOptions]="{standalone: true}"></td>
+                        </tr>
+
+                        <tr>
+                            <td>nationalNumber</td>
+                            <td><input type="text" [(ngModel)]="studentclass.nationalNumber" name="nationalnumber" [ngModelOptions]="{standalone: true}"></td>
+                        </tr>
+
+                        <tr>
+                            <td>gender</td>
+                            <td><input type="text" [(ngModel)]="studentclass.gender" name="gender" [ngModelOptions]="{standalone: true}"></td>
+                        </tr>
+
+                        <tr>
+                            <td>mobileNumber</td>
+                            <td><input type="text" [(ngModel)]="studentclass.mobileNumber" name="mobile" [ngModelOptions]="{standalone: true}"> </td>
+                        </tr>
+
+                        <tr>
+                            <td>telephoneNumber</td>
+                            <td><input type="text" [(ngModel)]="studentclass.telephoneNumber" name="telephone" [ngModelOptions]="{standalone: true}"></td>
+                        </tr>
+                        <tr>
+                            <td>email</td>
+                            <td>
+                                <input type="text" [(ngModel)]="studentclass.email" name="email" [ngModelOptions]="{standalone: true}" #email="ngModel"> </td>
+                        </tr>
+                        <tr>
+                            <button type=" submit " (click)="save()" class="btn btn-info ">Submit</button>
+                            <!-- <td colspan="2 "><button type="submit ">Save</button> </td> -->
+                        </tr>
+            </table>
+        </form>
+    </div>
+</div>>
